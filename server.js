@@ -9,7 +9,7 @@ const app = express();
 // Put your TomTom API key here
 const TOMTOM_KEY = 'OmjEMxlFBTDgePnLouGkZi2uxweKy3bA';
 // Template for TomTom vector tile URL
-const TOMTOM_URL = `https://api.tomtom.com/map/1/tile/basic/{z}/{x}/{y}.pbf?key=${OmjEMxlFBTDgePnLouGkZi2uxweKy3bA}`;
+const TOMTOM_URL = `https://api.tomtom.com/map/1/tile/basic/{z}/{x}/{y}.pbf?key=${TOMTOM_KEY}`;
 
 // Proxy endpoint for Mapbox-compatible MVT tiles
 app.get('/tiles/:z/:x/:y.pbf', async (req, res) => {
